@@ -6,6 +6,31 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_token1",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_token2",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "pair",
+						"type": "address"
+					}
+				],
+				"name": "PairCreated",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -19,6 +44,19 @@
 						"internalType": "address",
 						"name": "",
 						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "allPairsLength",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -81,6 +119,38 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_position",
+						"type": "uint256"
+					}
+				],
+				"name": "getPairOnPosition",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getPairs",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -119,11 +189,11 @@
 			]
 		},
 		"contracts/QiteSwap.sol": {
-			"keccak256": "0xfaad1b75f52da68fc54b4ebefd8aff333e8a0cc027ddd367a015edafdf692797",
+			"keccak256": "0x8b27c87e49458edc21bdc878a8f6839a556c2708869dae80d1cb42dc1ff97136",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://973c3ffd68631df0ea2ccb1736f4ba02b1dc28e4decdfb1b13a0d9dfd0ec126d",
-				"dweb:/ipfs/QmQWSfWVRLRyfHzz5ugBqPSPJkQkr7btxuiCVXDbhqHMj4"
+				"bzz-raw://5c4c584cf55e017919be16937e6bdcf075fe22b383b896b33aede7b6b36077a5",
+				"dweb:/ipfs/QmNQ7psBTypCAwZxQvQwTSxJene4LqmTXto3j2bR5K6AN3"
 			]
 		}
 	},

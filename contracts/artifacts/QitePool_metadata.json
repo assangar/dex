@@ -4,7 +4,120 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_token1",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_token2",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount_token1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount_token2",
+						"type": "uint256"
+					}
+				],
+				"name": "addLiquidity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "constantK",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "liquidityToken",
+				"outputs": [
+					{
+						"internalType": "contract QiteLiquidityToken",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reserve1",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "reserve2",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token1",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token2",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -32,12 +145,20 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/QitePool.sol": {
-			"keccak256": "0xcd9d1e715d490616518bf1b1386ba0d512355f00fbdeba67a9b840017bf63940",
+		"contracts/QiteLiquidityToken.sol": {
+			"keccak256": "0x597672ddcc1d3c2e8331aa379fa24e54eb1efc1dca6ed1fcc22c6a6f5c11f366",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f7fe24937d49befb608eda5038d13479040a26b074aa16733364a283971bf37d",
-				"dweb:/ipfs/QmTjjtqSuEvf1FmS8a8nsv3XmtbQSkA7iodbPBjHZuchPS"
+				"bzz-raw://4f419ac47284e8321915fe99a6be496b21efd763413ff6d8dd4dd3a14dae88a5",
+				"dweb:/ipfs/QmTdwXKfB5UnbqDiuzNKUVY322MizRr3j78ENCfLKiYNGE"
+			]
+		},
+		"contracts/QitePool.sol": {
+			"keccak256": "0x4507703a489153ac2b258c9239aae2724717af44e5c7d4b7db24062f85b75dd1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7498e55a4dace7e84f80af2de820ad4f791f4f3c06b327253eeee7f3cbebf7fb",
+				"dweb:/ipfs/QmVQxvQjKRnsxNrV6oeDpuf6yyHepUjSLHtLfwezgVf1rc"
 			]
 		}
 	},

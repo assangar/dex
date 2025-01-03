@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/QiteLiquidityToken.sol": "QiteLiquidityToken"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/QiteLiquidityToken.sol": {
+			"keccak256": "0x597672ddcc1d3c2e8331aa379fa24e54eb1efc1dca6ed1fcc22c6a6f5c11f366",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4f419ac47284e8321915fe99a6be496b21efd763413ff6d8dd4dd3a14dae88a5",
+				"dweb:/ipfs/QmTdwXKfB5UnbqDiuzNKUVY322MizRr3j78ENCfLKiYNGE"
+			]
+		}
+	},
+	"version": 1
+}
